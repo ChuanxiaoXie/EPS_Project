@@ -1,0 +1,17 @@
+{
+  "reference": "testdata/genome/reference.fa.example",
+  "sentieon": "/opt/sentieon/bin/sentieon",
+  "samtools": "/opt/samtools/bin/samtools",
+  "license_server": "license.example.invalid:8990",
+  "output_root": "test-output/sentieon_gvcf",
+  "threads": 2,
+  "filter_bam": true,
+  "samples": [
+    {
+      "sample_id": "SyntheticA",
+      "library": "SyntheticA",
+      "read1": "testdata/reads/synthetic_R1.fastq.example",
+      "read2": "testdata/reads/synthetic_R2.fastq.example"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "chromosomes": ["Chr1"],
+  "samples": ["Parent", "Child"],
+  "accepted_filters": ["PASS"],
+  "intervals": [
+    {
+      "name": "Parent_to_Child",
+      "lineage": "synthetic",
+      "target": "Child",
+      "generations": 1,
+      "ancestors": ["Parent"],
+      "descendants": [],
+      "required_callable_samples": ["Parent", "Child"]
+    }
+  ]
+}

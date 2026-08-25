@@ -1,0 +1,14 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQD,Description="Synthetic low-quality record">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SyntheticA	SyntheticB
+Chr1	2	.	C	T	60	PASS	.	GT:AD:DP:GQ	0/1:6,4:10:50	0/0:9,0:9:45
+Chr1	4	.	T	C	25	LowQD	.	GT:AD:DP:GQ	0/1:5,3:8:30	0/0:8,0:8:40
+Chr1	6	.	C	A	70	PASS	.	GT:AD:DP:GQ	1/1:0,12:12:60	0/1:7,5:12:55
+Chr1	8	.	T	G	20	LowQD	.	GT:AD:DP:GQ	0/1:4,3:7:25	0/0:7,0:7:35
+Chr1	20	.	T	C	65	PASS	.	GT:AD:DP:GQ	./.:0,0:0:.	0/1:10,6:16:58
+Chr2	3	.	G	A	80	PASS	.	GT:AD:DP:GQ	0/0:14,0:14:62	0/1:8,7:15:59

@@ -1,0 +1,18 @@
+{
+  "work_dir": "test-output/genome_annotation",
+  "stages": [
+    {
+      "name": "repeat_annotation",
+      "command": "printf 'synthetic repeat annotation\\n' > repeats.gff3",
+      "inputs": ["testdata/genome/reference.fa.example"],
+      "outputs": ["repeats.gff3"]
+    },
+    {
+      "name": "structural_annotation",
+      "depends_on": ["repeat_annotation"],
+      "command": "printf 'synthetic structural annotation\\n' > genes.gff3",
+      "inputs": ["testdata/genome/reference.fa.example"],
+      "outputs": ["genes.gff3"]
+    }
+  ]
+}

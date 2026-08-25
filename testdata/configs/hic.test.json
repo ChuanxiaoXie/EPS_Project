@@ -1,0 +1,12 @@
+{
+  "sample_id": "SyntheticHiC",
+  "reference": "testdata/genome/assembly.fa.example",
+  "read1": "testdata/reads/synthetic_R1.fastq.example",
+  "read2": "testdata/reads/synthetic_R2.fastq.example",
+  "output_root": "test-output/hic",
+  "bwa": "bwa",
+  "python": "python3",
+  "juicer_root": "/opt/juicer",
+  "three_d_dna_root": "/opt/3d-dna",
+  "threads": 2
+}

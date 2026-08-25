@@ -1,0 +1,5 @@
+Chr	POS	REF	ALT	variant_type	Amino_acid_variation
+Chr1	2	C	T	missense_variant|MODERATE	p.A1V
+Chr1	6	C	A	missense_variant|MODERATE	p.A2E
+Chr1	20	T	C	intron_variant|MODIFIER	NoneChange
+Chr2	3	G	A	synonymous_variant|LOW	p.G1G

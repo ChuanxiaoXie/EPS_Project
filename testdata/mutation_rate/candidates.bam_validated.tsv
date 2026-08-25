@@ -1,0 +1,3 @@
+candidate_id	interval	parallel_branch_shared	strict_pre_bam	bam_strict_strand_pass	in_mask	bam_strict_pass	relaxed_pre_bam	bam_relaxed_pass
+candidate_1	Parent_to_Child	no	yes	yes	no	yes	yes	yes
+candidate_2	Parent_to_Child	no	no	no	no	no	yes	yes

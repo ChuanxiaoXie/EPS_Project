@@ -1,0 +1,9 @@
+{
+  "reference": "testdata/genome/reference.fa.example",
+  "sentieon": "/opt/sentieon/bin/sentieon",
+  "gatk": "/opt/gatk/bin/gatk",
+  "license_server": "license.example.invalid:8990",
+  "output_root": "test-output/sentieon_joint",
+  "joint_vcf_name": "synthetic.joint.vcf.gz",
+  "threads": 2
+}

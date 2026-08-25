@@ -1,0 +1,12 @@
+{
+  "project": ".",
+  "sample": "SyntheticTDNA",
+  "output_root": "test-output/tdna",
+  "bam_primary": "/data/synthetic.coordinate_sorted.bam",
+  "reference": "testdata/genome/reference.fa.example",
+  "tdna_fasta": "testdata/tdna/tdna.fa.example",
+  "samtools": "samtools",
+  "conda": "conda",
+  "expected_tdna_bp": 44,
+  "threads": 2
+}

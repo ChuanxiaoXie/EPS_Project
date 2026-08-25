@@ -1,0 +1,3 @@
+line1	nonsynonymous SNV	SyntheticGene1:transcript1:exon1:c.C2T:p.A1V,	Chr1	2	2	C	T
+line2	nonsynonymous SNV	SyntheticGene1:transcript1:exon1:c.C6A:p.A2E,	Chr1	6	6	C	A
+line3	synonymous SNV	SyntheticGene3:transcript3:exon1:c.G3A:p.G1G,	Chr2	3	3	G	A

@@ -1,0 +1,9 @@
+{
+  "assessment_assembly": "testdata/genome/assembly.fa.example",
+  "output_root": "test-output/genome_assembly",
+  "python": "python3",
+  "minimum_sequence_length": 0,
+  "hic_config": null,
+  "merqury": {"enabled": false},
+  "busco": {"enabled": false}
+}

@@ -1,0 +1,4 @@
+exonic	SyntheticGene1	Chr1	2	2	C	T
+exonic	SyntheticGene1	Chr1	6	6	C	A
+intronic	SyntheticGene2	Chr1	20	20	T	C
+exonic	SyntheticGene3	Chr2	3	3	G	A
