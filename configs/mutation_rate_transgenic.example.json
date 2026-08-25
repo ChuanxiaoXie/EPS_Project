@@ -1,0 +1,39 @@
+{
+  "chromosomes": ["Chr1", "Chr2", "Chr3", "Chr4", "Chr5", "Chr6", "Chr7", "Chr8", "Chr9", "Chr10"],
+  "samples": ["M0A", "M1AD", "M2ADB", "M3ADBD", "M4ADBDA", "M5ADBDAG", "M1AE", "M2AEA", "M3AEAC", "M4AEACB", "M5AEACBA"],
+  "accepted_filters": ["PASS", "."],
+  "allow_missing_site_mq": true,
+  "thresholds": {
+    "callable_min_dp": 5,
+    "callable_max_dp": 40,
+    "callable_min_gq": 30,
+    "site_min_qd": 2.0,
+    "site_max_fs": 40.0,
+    "site_min_mq": 50.0,
+    "site_min_mq_rank_sum": -12.5,
+    "site_min_read_pos_rank_sum": -4.0,
+    "nearest_snv_distance": 5,
+    "target_min_alt_reads": 5,
+    "heterozygous_ab_min": 0.25,
+    "heterozygous_ab_max": 0.75,
+    "homozygous_alt_ab_min": 0.9,
+    "ancestor_min_ref_reads": 5,
+    "ancestor_max_alt_reads": 1,
+    "ancestor_max_ab": 0.05,
+    "max_other_base_fraction": 0.05,
+    "bam_min_mq": 50,
+    "bam_min_bq": 30
+  },
+  "intervals": [
+    {"name": "AD_M0A_to_M1AD", "lineage": "AD", "parent_sample": "M0A", "child_sample": "M1AD", "target": "M1AD", "generations": 1, "ancestors": ["M0A"], "descendants": ["M2ADB", "M3ADBD", "M4ADBDA", "M5ADBDAG"], "required_callable_samples": ["M0A", "M1AD"]},
+    {"name": "AD_M1AD_to_M2ADB", "lineage": "AD", "parent_sample": "M1AD", "child_sample": "M2ADB", "target": "M2ADB", "generations": 1, "ancestors": ["M0A", "M1AD"], "descendants": ["M3ADBD", "M4ADBDA", "M5ADBDAG"], "required_callable_samples": ["M1AD", "M2ADB"]},
+    {"name": "AD_M2ADB_to_M3ADBD", "lineage": "AD", "parent_sample": "M2ADB", "child_sample": "M3ADBD", "target": "M3ADBD", "generations": 1, "ancestors": ["M0A", "M1AD", "M2ADB"], "descendants": ["M4ADBDA", "M5ADBDAG"], "required_callable_samples": ["M2ADB", "M3ADBD"]},
+    {"name": "AD_M3ADBD_to_M4ADBDA", "lineage": "AD", "parent_sample": "M3ADBD", "child_sample": "M4ADBDA", "target": "M4ADBDA", "generations": 1, "ancestors": ["M0A", "M1AD", "M2ADB", "M3ADBD"], "descendants": ["M5ADBDAG"], "required_callable_samples": ["M3ADBD", "M4ADBDA"]},
+    {"name": "AD_M4ADBDA_to_M5ADBDAG", "lineage": "AD", "parent_sample": "M4ADBDA", "child_sample": "M5ADBDAG", "target": "M5ADBDAG", "generations": 1, "ancestors": ["M0A", "M1AD", "M2ADB", "M3ADBD", "M4ADBDA"], "descendants": [], "required_callable_samples": ["M4ADBDA", "M5ADBDAG"]},
+    {"name": "AE_M0A_to_M1AE", "lineage": "AE", "parent_sample": "M0A", "child_sample": "M1AE", "target": "M1AE", "generations": 1, "ancestors": ["M0A"], "descendants": ["M2AEA", "M3AEAC", "M4AEACB", "M5AEACBA"], "required_callable_samples": ["M0A", "M1AE"]},
+    {"name": "AE_M1AE_to_M2AEA", "lineage": "AE", "parent_sample": "M1AE", "child_sample": "M2AEA", "target": "M2AEA", "generations": 1, "ancestors": ["M0A", "M1AE"], "descendants": ["M3AEAC", "M4AEACB", "M5AEACBA"], "required_callable_samples": ["M1AE", "M2AEA"]},
+    {"name": "AE_M2AEA_to_M3AEAC", "lineage": "AE", "parent_sample": "M2AEA", "child_sample": "M3AEAC", "target": "M3AEAC", "generations": 1, "ancestors": ["M0A", "M1AE", "M2AEA"], "descendants": ["M4AEACB", "M5AEACBA"], "required_callable_samples": ["M2AEA", "M3AEAC"]},
+    {"name": "AE_M3AEAC_to_M4AEACB", "lineage": "AE", "parent_sample": "M3AEAC", "child_sample": "M4AEACB", "target": "M4AEACB", "generations": 1, "ancestors": ["M0A", "M1AE", "M2AEA", "M3AEAC"], "descendants": ["M5AEACBA"], "required_callable_samples": ["M3AEAC", "M4AEACB"]},
+    {"name": "AE_M4AEACB_to_M5AEACBA", "lineage": "AE", "parent_sample": "M4AEACB", "child_sample": "M5AEACBA", "target": "M5AEACBA", "generations": 1, "ancestors": ["M0A", "M1AE", "M2AEA", "M3AEAC", "M4AEACB"], "descendants": [], "required_callable_samples": ["M4AEACB", "M5AEACBA"]}
+  ]
+}

@@ -1,0 +1,12 @@
+sample	gvcf
+M0A	/path/to/M0A.g.vcf.gz
+M1AD	/path/to/M1AD.g.vcf.gz
+M2ADB	/path/to/M2ADB.g.vcf.gz
+M3ADBD	/path/to/M3ADBD.g.vcf.gz
+M4ADBDA	/path/to/M4ADBDA.g.vcf.gz
+M5ADBDAG	/path/to/M5ADBDAG.g.vcf.gz
+M1AE	/path/to/M1AE.g.vcf.gz
+M2AEA	/path/to/M2AEA.g.vcf.gz
+M3AEAC	/path/to/M3AEAC.g.vcf.gz
+M4AEACB	/path/to/M4AEACB.g.vcf.gz
+M5AEACBA	/path/to/M5AEACBA.g.vcf.gz

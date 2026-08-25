@@ -1,0 +1,61 @@
+{
+  "chromosomes": ["Chr1", "Chr2", "Chr3", "Chr4", "Chr5", "Chr6", "Chr7", "Chr8", "Chr9", "Chr10"],
+  "samples": ["S0A", "S2ABA", "S3ABAA", "S4ABAAA", "S5ABAAAA"],
+  "accepted_filters": ["PASS"],
+  "allow_missing_site_mq": false,
+  "thresholds": {
+    "callable_min_dp": 5,
+    "callable_max_dp": 40,
+    "callable_min_gq": 30,
+    "site_min_qd": 2.0,
+    "site_max_fs": 40.0,
+    "site_min_mq": 50.0,
+    "site_min_mq_rank_sum": -12.5,
+    "site_min_read_pos_rank_sum": -4.0,
+    "nearest_snv_distance": 5,
+    "target_min_alt_reads": 5,
+    "heterozygous_ab_min": 0.25,
+    "heterozygous_ab_max": 0.75,
+    "homozygous_alt_ab_min": 0.9,
+    "ancestor_min_ref_reads": 5,
+    "ancestor_max_alt_reads": 1,
+    "ancestor_max_ab": 0.05,
+    "max_other_base_fraction": 0.05,
+    "bam_min_mq": 50,
+    "bam_min_bq": 30
+  },
+  "intervals": [
+    {
+      "name": "S0A_to_S2ABA",
+      "target": "S2ABA",
+      "generations": 2,
+      "ancestors": ["S0A"],
+      "descendants": ["S3ABAA", "S4ABAAA", "S5ABAAAA"],
+      "required_callable_samples": ["S0A", "S2ABA"]
+    },
+    {
+      "name": "S2ABA_to_S3ABAA",
+      "target": "S3ABAA",
+      "generations": 1,
+      "ancestors": ["S0A", "S2ABA"],
+      "descendants": ["S4ABAAA", "S5ABAAAA"],
+      "required_callable_samples": ["S0A", "S2ABA", "S3ABAA"]
+    },
+    {
+      "name": "S3ABAA_to_S4ABAAA",
+      "target": "S4ABAAA",
+      "generations": 1,
+      "ancestors": ["S0A", "S2ABA", "S3ABAA"],
+      "descendants": ["S5ABAAAA"],
+      "required_callable_samples": ["S0A", "S2ABA", "S3ABAA", "S4ABAAA"]
+    },
+    {
+      "name": "S4ABAAA_to_S5ABAAAA",
+      "target": "S5ABAAAA",
+      "generations": 1,
+      "ancestors": ["S0A", "S2ABA", "S3ABAA", "S4ABAAA"],
+      "descendants": [],
+      "required_callable_samples": ["S0A", "S2ABA", "S3ABAA", "S4ABAAA", "S5ABAAAA"]
+    }
+  ]
+}

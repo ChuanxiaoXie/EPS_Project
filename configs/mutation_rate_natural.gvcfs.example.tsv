@@ -1,0 +1,6 @@
+sample	gvcf
+S0A	/path/to/S0A.g.vcf.gz
+S2ABA	/path/to/S2ABA.g.vcf.gz
+S3ABAA	/path/to/S3ABAA.g.vcf.gz
+S4ABAAA	/path/to/S4ABAAA.g.vcf.gz
+S5ABAAAA	/path/to/S5ABAAAA.g.vcf.gz

@@ -1,0 +1,12 @@
+sample	bam
+M0A	/path/to/M0A.rmdup.bam
+M1AD	/path/to/M1AD.rmdup.bam
+M2ADB	/path/to/M2ADB.rmdup.bam
+M3ADBD	/path/to/M3ADBD.rmdup.bam
+M4ADBDA	/path/to/M4ADBDA.rmdup.bam
+M5ADBDAG	/path/to/M5ADBDAG.rmdup.bam
+M1AE	/path/to/M1AE.rmdup.bam
+M2AEA	/path/to/M2AEA.rmdup.bam
+M3AEAC	/path/to/M3AEAC.rmdup.bam
+M4AEACB	/path/to/M4AEACB.rmdup.bam
+M5AEACBA	/path/to/M5AEACBA.rmdup.bam

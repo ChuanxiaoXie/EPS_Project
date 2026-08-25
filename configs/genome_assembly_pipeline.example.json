@@ -1,0 +1,25 @@
+{
+  "assessment_assembly": "/path/to/final_assembly.fa",
+  "output_root": "/path/to/assembly_pipeline_output",
+  "python": "python3",
+  "minimum_sequence_length": 0,
+  "hic_config": null,
+  "merqury": {
+    "enabled": true,
+    "reads": [
+      "/path/to/read1.fastq.gz",
+      "/path/to/read2.fastq.gz"
+    ],
+    "merqury_root": "/path/to/merqury",
+    "prefix": "final_assembly"
+  },
+  "busco": {
+    "enabled": true,
+    "input": "/path/to/predicted_proteins.fa",
+    "lineage": "/path/to/embryophyta_odb10",
+    "mode": "proteins",
+    "run_name": "BUSCO",
+    "threads": 15,
+    "offline": true
+  }
+}

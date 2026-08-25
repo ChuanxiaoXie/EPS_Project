@@ -1,0 +1,18 @@
+{
+  "reference": "/path/to/reference.fa",
+  "sentieon": "/path/to/sentieon",
+  "gatk": "/path/to/gatk",
+  "license_server": "license-host:8990",
+  "output_root": "/path/to/output",
+  "joint_vcf_name": "joint.vcf.gz",
+  "snp_vcf_name": "joint.snps.vcf.gz",
+  "filtered_vcf_name": "joint.snps.filtered.vcf.gz",
+  "threads": 20,
+  "min_qd": 2.0,
+  "max_fs": 40.0,
+  "min_mq": 40.0,
+  "min_mq_rank_sum": -12.5,
+  "min_read_pos_rank_sum": -4.0,
+  "haplotype_score_operator": ">",
+  "haplotype_score_threshold": 13.0
+}

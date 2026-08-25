@@ -1,0 +1,25 @@
+{
+  "work_dir": "/path/to/annotation_run",
+  "stages": [
+    {
+      "name": "repeat_annotation",
+      "command": "run_repeat_annotation --genome /path/to/reference.fa --out repeats.gff3",
+      "inputs": ["/path/to/reference.fa"],
+      "outputs": ["repeats.gff3"]
+    },
+    {
+      "name": "evidence_alignment",
+      "depends_on": ["repeat_annotation"],
+      "command": "run_evidence_alignment --genome /path/to/reference.fa --out evidence.gff3",
+      "inputs": ["/path/to/reference.fa"],
+      "outputs": ["evidence.gff3"]
+    },
+    {
+      "name": "evm_integration",
+      "depends_on": ["evidence_alignment"],
+      "command": "run_evm --evidence evidence.gff3 --out integrated.gff3",
+      "inputs": ["evidence.gff3"],
+      "outputs": ["integrated.gff3"]
+    }
+  ]
+}

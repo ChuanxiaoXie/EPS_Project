@@ -1,0 +1,14 @@
+{
+  "sample_id": "EPS",
+  "reference": "/path/to/reference.fa",
+  "read1": "/path/to/hic_R1.fastq.gz",
+  "read2": "/path/to/hic_R2.fastq.gz",
+  "output_root": "/path/to/hic_output",
+  "bwa": "/path/to/bwa",
+  "python": "/path/to/python3",
+  "juicer_root": "/path/to/juicer",
+  "three_d_dna_root": "/path/to/3d-dna",
+  "restriction_site": "DpnII",
+  "threads": 60,
+  "review_rounds": 2
+}

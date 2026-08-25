@@ -1,0 +1,15 @@
+{
+  "project": "/path/to/tdna_project",
+  "sample": "SAMPLE01",
+  "output_root": "/path/to/tdna_project/runs/SAMPLE01",
+  "bam_primary": "/path/to/SAMPLE01.rmdup.bam",
+  "reference": "/path/to/reference.fa",
+  "tdna_fasta": "/path/to/tdna.fa",
+  "samtools": "samtools",
+  "conda": "conda",
+  "fallback_tool_bin": "",
+  "expected_tdna_bp": 11269,
+  "tdna_scope_note": "The supplied T-DNA FASTA contains the assayed insert sequence and excludes vector backbone.",
+  "normalize_bam_header": false,
+  "threads": 24
+}

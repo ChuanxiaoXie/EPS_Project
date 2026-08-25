@@ -1,0 +1,6 @@
+sample	bam
+S0A	/path/to/S0A.rmdup.bam
+S2ABA	/path/to/S2ABA.rmdup.bam
+S3ABAA	/path/to/S3ABAA.rmdup.bam
+S4ABAAA	/path/to/S4ABAAA.rmdup.bam
+S5ABAAAA	/path/to/S5ABAAAA.rmdup.bam

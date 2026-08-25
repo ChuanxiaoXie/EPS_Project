@@ -1,0 +1,14 @@
+{
+  "circos": "circos",
+  "track_dir": "/path/to/circos_tracks",
+  "output_dir": "/path/to/circos_figure",
+  "output_file": "eps_chromosome_circos",
+  "chromosomes_units": 5000000,
+  "plot_ranges": {
+    "genome_snp": [0, 65],
+    "gene_snp": [0, 25],
+    "gene_density": [0, 15],
+    "gc_count": [0, 119408],
+    "gc_to_at": [0, 49]
+  }
+}

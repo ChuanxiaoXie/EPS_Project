@@ -1,0 +1,22 @@
+{
+  "reference": "/path/to/reference.fa",
+  "sentieon": "/path/to/sentieon",
+  "samtools": "/path/to/samtools",
+  "license_server": "license-host:8990",
+  "output_root": "/path/to/output",
+  "threads": 30,
+  "ploidy": 2,
+  "filter_bam": true,
+  "minimum_mapping_quality": 20,
+  "maximum_edit_distance": 1,
+  "maximum_cigar_operations": 2,
+  "cleanup_sorted_bam": false,
+  "samples": [
+    {
+      "sample_id": "SAMPLE01",
+      "library": "SAMPLE01",
+      "read1": "/path/to/SAMPLE01_R1.fastq.gz",
+      "read2": "/path/to/SAMPLE01_R2.fastq.gz"
+    }
+  ]
+}
